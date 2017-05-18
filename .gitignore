@@ -27,11 +27,3 @@ build/Release
 node_modules
 
 #config files
-auth.json
-rss.json
-alias.json
-permissions.json
-messagebox.json
-config.json
-.env
-twitch.json
