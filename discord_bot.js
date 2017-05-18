@@ -35,3 +35,22 @@ function downloadConfig(config){
 		});
 	})
 }
+
+function uploadConfig(config){
+	var filename = './' + config + '.json';
+	var fileBuffer = require('fs').readFileSync(filename);
+	//var metaData = getContentTypeByFile(filename);
+
+	s3.putObject({
+		Bucket: process.env.S3_BUCKET_NAME,
+		Key: config + '.json',
+		Body: fileBuffer
+	}, function(err, data){
+		if(err){
+			console.log('File upload failed for ' + filename);
+			console.log(err);
+		} else {
+			console.log('Uploaded file ' + filename + ' to the cloud.');
+		}
+	});
+}
