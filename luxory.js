@@ -473,7 +473,7 @@ var commands = {
 				break;
 
 				default:
-				msg.channel.sendMessage("I don't even. Use !help you dingus.")
+				msg.channel.sendMessage("I don't even. Use -help you dingus.")
 			}
 		}
 	},
