@@ -1,0 +1,23 @@
+{
+  "weenie": [
+    "You can't hide what's inside.",
+    "Care for another sundae, weenie?",
+    "I’m sorry, sir, but my sensors indicate that you are indeed a weenie.",
+    "Would you care for another diet cola with a lemon twist, weenie?",
+    "I am a robot, not a miracle worker."
+  ],
+  "notaweenie": [
+    "I’m sorry, sir, but my sensors indicate that you are indeed bad."
+  ],
+  "rateme": [
+	  "You are not bad.",
+	  "Ask again later.",
+	  "shit code overload",
+	  "ur a lil dumb lol.",
+	  "You are Super bad.",
+	  "ok, nice",
+	  "meh",
+	  "bad",
+	  "shit bot"
+  ]
+}
