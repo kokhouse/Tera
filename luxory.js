@@ -102,12 +102,12 @@ Permissions.checkPermission = function (user,permission){
 // TODO: Use Config data and update Config.json when changing values
 if(Config.length <= 0){
 	Config.debug = false;
-	Config.commandPrefix = '!';
+	Config.commandPrefix = '?';
 	Config.maxFrakons = 15;
 	Config.admin = "";
 }
 if(!Config.hasOwnProperty("commandPrefix")){
-	Config.commandPrefix = '!';
+	Config.commandPrefix = '?';
 }
 
 var messagebox;
@@ -416,7 +416,7 @@ var commands = {
 	},
 	"luxpls": {
 		usage: "Luxory pls",
-		description: "Message a plz to Luxory",
+		description: "Message a plz to Luxory ~~u should do this if bot is being dumb xd~~",
 		process: function(bot,msg,suffix){
 			msg.channel.sendMessage(Config.plz + " __***Luxory pls***__");
 			if(suffix){
@@ -473,7 +473,7 @@ var commands = {
 				break;
 
 				default:
-				msg.channel.sendMessage("I don't even. Use -help you dingus.")
+				msg.channel.sendMessage("I don't even. Use ?help you dingus.")
 			}
 		}
 	},
